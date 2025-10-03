@@ -1,0 +1,387 @@
+{
+  "summary": {
+    "totalFiles": 47,
+    "totalOriginalSize": 39533247,
+    "totalOptimizedSize": 1466768,
+    "totalSavings": 38066479,
+    "totalSavingsPercent": "96.29"
+  },
+  "files": [
+    {
+      "original": "src\\assets\\cross_icon.png",
+      "optimized": "src\\assets\\cross_icon.webp",
+      "originalSize": 616,
+      "optimizedSize": 238,
+      "savings": 378,
+      "savingsPercent": "61.36"
+    },
+    {
+      "original": "src\\assets\\test_series\\upsc.png",
+      "optimized": "src\\assets\\test_series\\upsc.webp",
+      "originalSize": 10020,
+      "optimizedSize": 3426,
+      "savings": 6594,
+      "savingsPercent": "65.81"
+    },
+    {
+      "original": "src\\assets\\test_series\\tspsc.png",
+      "optimized": "src\\assets\\test_series\\tspsc.webp",
+      "originalSize": 13775,
+      "optimizedSize": 4428,
+      "savings": 9347,
+      "savingsPercent": "67.85"
+    },
+    {
+      "original": "src\\assets\\test_series\\test_series_section1.png",
+      "optimized": "src\\assets\\test_series\\test_series_section1.webp",
+      "originalSize": 990700,
+      "optimizedSize": 41024,
+      "savings": 949676,
+      "savingsPercent": "95.86"
+    },
+    {
+      "original": "src\\assets\\newsImg2.png",
+      "optimized": "src\\assets\\newsImg2.webp",
+      "originalSize": 3749525,
+      "optimizedSize": 179590,
+      "savings": 3569935,
+      "savingsPercent": "95.21"
+    },
+    {
+      "original": "src\\assets\\test_series\\ssc.png",
+      "optimized": "src\\assets\\test_series\\ssc.webp",
+      "originalSize": 12096,
+      "optimizedSize": 3888,
+      "savings": 8208,
+      "savingsPercent": "67.86"
+    },
+    {
+      "original": "src\\assets\\newsImg1.png",
+      "optimized": "src\\assets\\newsImg1.webp",
+      "originalSize": 3749525,
+      "optimizedSize": 179590,
+      "savings": 3569935,
+      "savingsPercent": "95.21"
+    },
+    {
+      "original": "src\\assets\\test_series\\rrb.png",
+      "optimized": "src\\assets\\test_series\\rrb.webp",
+      "originalSize": 14304,
+      "optimizedSize": 4450,
+      "savings": 9854,
+      "savingsPercent": "68.89"
+    },
+    {
+      "original": "src\\assets\\test_series\\rrb-groupd.png",
+      "optimized": "src\\assets\\test_series\\rrb-groupd.webp",
+      "originalSize": 14304,
+      "optimizedSize": 4450,
+      "savings": 9854,
+      "savingsPercent": "68.89"
+    },
+    {
+      "original": "src\\assets\\test_series\\sbi.png",
+      "optimized": "src\\assets\\test_series\\sbi.webp",
+      "originalSize": 11080,
+      "optimizedSize": 2956,
+      "savings": 8124,
+      "savingsPercent": "73.32"
+    },
+    {
+      "original": "src\\assets\\test_series\\ibps.png",
+      "optimized": "src\\assets\\test_series\\ibps.webp",
+      "originalSize": 11080,
+      "optimizedSize": 2956,
+      "savings": 8124,
+      "savingsPercent": "73.32"
+    },
+    {
+      "original": "src\\assets\\test_series\\realTime.png",
+      "optimized": "src\\assets\\test_series\\realTime.webp",
+      "originalSize": 7410,
+      "optimizedSize": 3642,
+      "savings": 3768,
+      "savingsPercent": "50.85"
+    },
+    {
+      "original": "src\\assets\\test_series\\capf.png",
+      "optimized": "src\\assets\\test_series\\capf.webp",
+      "originalSize": 10020,
+      "optimizedSize": 3426,
+      "savings": 6594,
+      "savingsPercent": "65.81"
+    },
+    {
+      "original": "src\\assets\\test_series\\expertQuestion.png",
+      "optimized": "src\\assets\\test_series\\expertQuestion.webp",
+      "originalSize": 17027,
+      "optimizedSize": 7072,
+      "savings": 9955,
+      "savingsPercent": "58.47"
+    },
+    {
+      "original": "src\\assets\\test_series\\appsc.png",
+      "optimized": "src\\assets\\test_series\\appsc.webp",
+      "originalSize": 19975,
+      "optimizedSize": 10640,
+      "savings": 9335,
+      "savingsPercent": "46.73"
+    },
+    {
+      "original": "src\\assets\\test_series\\instantResult.png",
+      "optimized": "src\\assets\\test_series\\instantResult.webp",
+      "originalSize": 19122,
+      "optimizedSize": 6972,
+      "savings": 12150,
+      "savingsPercent": "63.54"
+    },
+    {
+      "original": "src\\assets\\landing_page\\success_stories.png",
+      "optimized": "src\\assets\\landing_page\\success_stories.webp",
+      "originalSize": 13590,
+      "optimizedSize": 3624,
+      "savings": 9966,
+      "savingsPercent": "73.33"
+    },
+    {
+      "original": "src\\assets\\landing_page\\serviceImg5.png",
+      "optimized": "src\\assets\\landing_page\\serviceImg5.webp",
+      "originalSize": 2124944,
+      "optimizedSize": 41736,
+      "savings": 2083208,
+      "savingsPercent": "98.04"
+    },
+    {
+      "original": "src\\assets\\landing_page\\serviceImg4.png",
+      "optimized": "src\\assets\\landing_page\\serviceImg4.webp",
+      "originalSize": 6515430,
+      "optimizedSize": 118394,
+      "savings": 6397036,
+      "savingsPercent": "98.18"
+    },
+    {
+      "original": "src\\assets\\landing_page\\serviceImg3.png",
+      "optimized": "src\\assets\\landing_page\\serviceImg3.webp",
+      "originalSize": 2538258,
+      "optimizedSize": 43064,
+      "savings": 2495194,
+      "savingsPercent": "98.30"
+    },
+    {
+      "original": "src\\assets\\test_series\\anytime.png",
+      "optimized": "src\\assets\\test_series\\anytime.webp",
+      "originalSize": 8146,
+      "optimizedSize": 3658,
+      "savings": 4488,
+      "savingsPercent": "55.09"
+    },
+    {
+      "original": "src\\assets\\landing_page\\serviceImg2.png",
+      "optimized": "src\\assets\\landing_page\\serviceImg2.webp",
+      "originalSize": 4240683,
+      "optimizedSize": 50908,
+      "savings": 4189775,
+      "savingsPercent": "98.80"
+    },
+    {
+      "original": "src\\assets\\landing_page\\serviceImg1.png",
+      "optimized": "src\\assets\\landing_page\\serviceImg1.webp",
+      "originalSize": 1429485,
+      "optimizedSize": 59450,
+      "savings": 1370035,
+      "savingsPercent": "95.84"
+    },
+    {
+      "original": "src\\assets\\landing_page\\time_management.png",
+      "optimized": "src\\assets\\landing_page\\time_management.webp",
+      "originalSize": 10392,
+      "optimizedSize": 5992,
+      "savings": 4400,
+      "savingsPercent": "42.34"
+    },
+    {
+      "original": "src\\assets\\landing_page\\important_dates.png",
+      "optimized": "src\\assets\\landing_page\\important_dates.webp",
+      "originalSize": 11138,
+      "optimizedSize": 2754,
+      "savings": 8384,
+      "savingsPercent": "75.27"
+    },
+    {
+      "original": "src\\assets\\landing_page\\exam_tips.png",
+      "optimized": "src\\assets\\landing_page\\exam_tips.webp",
+      "originalSize": 12843,
+      "optimizedSize": 2948,
+      "savings": 9895,
+      "savingsPercent": "77.05"
+    },
+    {
+      "original": "src\\assets\\icons\\trackProgress.png",
+      "optimized": "src\\assets\\icons\\trackProgress.webp",
+      "originalSize": 5011,
+      "optimizedSize": 1812,
+      "savings": 3199,
+      "savingsPercent": "63.84"
+    },
+    {
+      "original": "src\\assets\\icons\\quick_result.png",
+      "optimized": "src\\assets\\icons\\quick_result.webp",
+      "originalSize": 5118,
+      "optimizedSize": 1820,
+      "savings": 3298,
+      "savingsPercent": "64.44"
+    },
+    {
+      "original": "src\\assets\\landing_page\\section1.jpeg",
+      "optimized": "src\\assets\\landing_page\\section1.webp",
+      "originalSize": 49745,
+      "optimizedSize": 29360,
+      "savings": 20385,
+      "savingsPercent": "40.98"
+    },
+    {
+      "original": "src\\assets\\icons\\profile_icon.png",
+      "optimized": "src\\assets\\icons\\profile_icon.webp",
+      "originalSize": 673,
+      "optimizedSize": 314,
+      "savings": 359,
+      "savingsPercent": "53.34"
+    },
+    {
+      "original": "src\\assets\\icons\\mock_tests.png",
+      "optimized": "src\\assets\\icons\\mock_tests.webp",
+      "originalSize": 5029,
+      "optimizedSize": 1852,
+      "savings": 3177,
+      "savingsPercent": "63.17"
+    },
+    {
+      "original": "src\\assets\\landing_page\\section3.png",
+      "optimized": "src\\assets\\landing_page\\section3.webp",
+      "originalSize": 2277640,
+      "optimizedSize": 83420,
+      "savings": 2194220,
+      "savingsPercent": "96.34"
+    },
+    {
+      "original": "src\\assets\\icons\\logo.png",
+      "optimized": "src\\assets\\icons\\logo.webp",
+      "originalSize": 17540,
+      "optimizedSize": 4378,
+      "savings": 13162,
+      "savingsPercent": "75.04"
+    },
+    {
+      "original": "src\\assets\\icons\\linkedIn.png",
+      "optimized": "src\\assets\\icons\\linkedIn.webp",
+      "originalSize": 1391,
+      "optimizedSize": 934,
+      "savings": 457,
+      "savingsPercent": "32.85"
+    },
+    {
+      "original": "src\\assets\\test_series\\section4.png",
+      "optimized": "src\\assets\\test_series\\section4.webp",
+      "originalSize": 595789,
+      "optimizedSize": 103694,
+      "savings": 492095,
+      "savingsPercent": "82.60"
+    },
+    {
+      "original": "src\\assets\\icons\\expert_questions.png",
+      "optimized": "src\\assets\\icons\\expert_questions.webp",
+      "originalSize": 5624,
+      "optimizedSize": 1848,
+      "savings": 3776,
+      "savingsPercent": "67.14"
+    },
+    {
+      "original": "src\\assets\\icons\\instagram.png",
+      "optimized": "src\\assets\\icons\\instagram.webp",
+      "originalSize": 9820,
+      "optimizedSize": 1746,
+      "savings": 8074,
+      "savingsPercent": "82.22"
+    },
+    {
+      "original": "src\\assets\\icons\\gmail.png",
+      "optimized": "src\\assets\\icons\\gmail.webp",
+      "originalSize": 1351,
+      "optimizedSize": 1198,
+      "savings": 153,
+      "savingsPercent": "11.32"
+    },
+    {
+      "original": "src\\assets\\exams_page\\section3_bg.png",
+      "optimized": "src\\assets\\exams_page\\section3_bg.webp",
+      "originalSize": 1562101,
+      "optimizedSize": 25494,
+      "savings": 1536607,
+      "savingsPercent": "98.37"
+    },
+    {
+      "original": "src\\assets\\about_us\\section3Bg.png",
+      "optimized": "src\\assets\\about_us\\section3Bg.webp",
+      "originalSize": 158575,
+      "optimizedSize": 10004,
+      "savings": 148571,
+      "savingsPercent": "93.69"
+    },
+    {
+      "original": "src\\assets\\about_us\\section1.png",
+      "optimized": "src\\assets\\about_us\\section1.webp",
+      "originalSize": 5931994,
+      "optimizedSize": 46938,
+      "savings": 5885056,
+      "savingsPercent": "99.21"
+    },
+    {
+      "original": "src\\assets\\about_us\\section3Person.png",
+      "optimized": "src\\assets\\about_us\\section3Person.webp",
+      "originalSize": 1227188,
+      "optimizedSize": 84796,
+      "savings": 1142392,
+      "savingsPercent": "93.09"
+    },
+    {
+      "original": "src\\assets\\landing_page\\section4.png",
+      "optimized": "src\\assets\\landing_page\\section4.webp",
+      "originalSize": 595789,
+      "optimizedSize": 103694,
+      "savings": 492095,
+      "savingsPercent": "82.60"
+    },
+    {
+      "original": "src\\assets\\exams_page\\section3_1.png",
+      "optimized": "src\\assets\\exams_page\\section3_1.webp",
+      "originalSize": 1437062,
+      "optimizedSize": 130156,
+      "savings": 1306906,
+      "savingsPercent": "90.94"
+    },
+    {
+      "original": "src\\assets\\about_us\\ourVision.png",
+      "optimized": "src\\assets\\about_us\\ourVision.webp",
+      "originalSize": 36907,
+      "optimizedSize": 15006,
+      "savings": 21901,
+      "savingsPercent": "59.34"
+    },
+    {
+      "original": "src\\assets\\about_us\\ourValues.png",
+      "optimized": "src\\assets\\about_us\\ourValues.webp",
+      "originalSize": 17869,
+      "optimizedSize": 11038,
+      "savings": 6831,
+      "savingsPercent": "38.23"
+    },
+    {
+      "original": "src\\assets\\about_us\\ourMission.png",
+      "optimized": "src\\assets\\about_us\\ourMission.webp",
+      "originalSize": 35543,
+      "optimizedSize": 15990,
+      "savings": 19553,
+      "savingsPercent": "55.01"
+    }
+  ]
+}

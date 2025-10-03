@@ -1,0 +1,29 @@
+.profile {
+  padding: 20px;
+  max-width: 800px;
+  margin: 100px auto;
+  /* margin-top: 100px !important; */
+}
+
+.profile-info {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-results table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-results th,
+.profile-results td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.profile-results th {
+  background-color: #f2f2f2;
+}
