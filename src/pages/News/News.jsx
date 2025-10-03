@@ -13,20 +13,25 @@ const News = ({ url }) => {
     setError(null);
     
     try {
+      console.log('Fetching news from:', `${url}/api/news/get`);
       const response = await axios.get(`${url}/api/news/get`, { 
-        timeout: 5000,
+        withCredentials: true, // Include credentials (cookies, HTTP authentication)
+        timeout: 10000, // Increased timeout
         headers: {
           'Accept': 'application/json',
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Cache-Control': 'no-cache'
         }
       });
       
-      if (response.status === 200) {
-        const newsData = Array.isArray(response.data) ? response.data : 
-                        (response.data?.data || []);
+      console.log('News API response:', response);
+      
+      if (response.data && response.data.success) {
+        const newsData = Array.isArray(response.data.data) ? response.data.data : 
+                        (response.data.data ? [response.data.data] : []);
         setNews(newsData);
       } else {
-        throw new Error('Failed to fetch news');
+        throw new Error(response.data?.message || 'Failed to fetch news');
       }
     } catch (err) {
       const errorMessage = err.response?.data?.message || 'Failed to load news. Please try again later.';
