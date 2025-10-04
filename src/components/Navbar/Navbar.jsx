@@ -219,14 +219,14 @@ const Navbar = ({setShowLogin}) => {
                     
                     <div className="dropdown-divider"></div>
                     
-                    <Link to="/profile" className="dropdown-item" onClick={() => setIsProfileDropdownOpen(false)}>
+                    <Link to="/profile" className="dropdown-item"  onClick={() => {setIsProfileDropdownOpen(false);handleNavItemClick()}}>
                       <FiUser className="dropdown-icon" />
                       <span>My Profile</span>
                     </Link>
                     
                     <div className="dropdown-divider"></div>
                     
-                    <div className="dropdown-item logout-item" onClick={handleLogout}>
+                    <div className="dropdown-item logout-item" onClick={()=>{handleLogout();handleNavItemClick()}}>
                       <FiLogOut className="dropdown-icon" />
                       <span>Logout</span>
                     </div>

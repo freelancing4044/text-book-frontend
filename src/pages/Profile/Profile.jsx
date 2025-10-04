@@ -61,11 +61,11 @@ const Profile = ({url}) => {
             <tbody>
               {results.map((result) => (
                 <tr key={result._id}>
-                  <td>{result.test.title}</td>
-                  <td>{result.test.subject}</td>
-                  <td>{result.score}/{result.totalQuestions}</td>
-                  <td>{result.percentage.toFixed(2)}%</td>
-                  <td>{new Date(result.submittedAt).toLocaleDateString()}</td>
+                  <td data-label="Test">{result.test.title}</td>
+                  <td data-label="Subject">{result.test.subject}</td>
+                  <td data-label="Score">{result.score}/{result.totalQuestions}</td>
+                  <td data-label="Percentage">{result.percentage.toFixed(2)}%</td>
+                  <td data-label="Date">{new Date(result.submittedAt).toLocaleDateString()}</td>
                 </tr>
               ))}
             </tbody>

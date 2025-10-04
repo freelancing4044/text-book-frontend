@@ -1,29 +1,147 @@
 .profile {
-  padding: 20px;
-  max-width: 800px;
-  margin: 100px auto;
-  /* margin-top: 100px !important; */
+    padding: 2rem;
+    max-width: 900px;
+    margin: 120px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-info {
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.profile-results h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
 }
 
 .profile-results table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .profile-results th,
 .profile-results td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
 }
 
 .profile-results th {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
+    font-weight: 600;
+    color: #333;
+}
+
+.profile-results tr:last-child td {
+    border-bottom: none;
+}
+
+.profile-results tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        padding: 1rem;
+        margin: 80px auto;
+    }
+
+    .profile-results table,
+    .profile-results thead,
+    .profile-results tbody,
+    .profile-results th,
+    .profile-results td,
+    .profile-results tr {
+        display: block;
+    }
+
+    .profile-results thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .profile-results tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: #fff;
+    }
+
+    .profile-results td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile-results td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        width: 45%;
+        padding-right: 1rem;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .profile-results td:nth-of-type(1):before { content: "Test"; }
+    .profile-results td:nth-of-type(2):before { content: "Subject"; }
+    .profile-results td:nth-of-type(3):before { content: "Score"; }
+    .profile-results td:nth-of-type(4):before { content: "Percentage"; }
+    .profile-results td:nth-of-type(5):before { content: "Date"; }
+}
+
+@media (max-width: 480px) {
+    .profile-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+    }
+
+    .profile-results h3 {
+        font-size: 1.2rem;
+    }
+
+    .profile-results td {
+        padding-left: 45%;
+    }
+
+    .profile-results td:before {
+        width: 40%;
+    }
 }

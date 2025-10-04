@@ -29,13 +29,7 @@ const TestPage = () => {
   const [testSeed, setTestSeed] = useState(null);
   const [error, setError] = useState(null);
   const [testStarted, setTestStarted] = useState(false);
-  const userAnswersRef = React.useRef(userAnswers);
-  const timeLeftRef = React.useRef(timeLeft);
-
-  useEffect(() => {
-    userAnswersRef.current = userAnswers;
-    timeLeftRef.current = timeLeft;
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Handle fullscreen mode
   const enterFullscreen = useCallback(() => {
@@ -162,14 +156,14 @@ const TestPage = () => {
   };
   
   const handleSubmit = useCallback(async (isAutoSubmit = false) => {
+    if (isSubmitting) return;
     if (!testData) {
       console.error('No test data available');
       setError('Test data is not available. Please refresh the page and try again.');
       return;
     }
     
-    const currentAnswers = userAnswersRef.current;
-    const formattedUserAnswers = Object.entries(currentAnswers).map(([questionId, selectedOptionIndex]) => ({
+    const formattedUserAnswers = Object.entries(userAnswers).map(([questionId, selectedOptionIndex]) => ({
       questionId,
       selectedOptionIndex: Number(selectedOptionIndex) || 0,
     }));
@@ -183,12 +177,13 @@ const TestPage = () => {
     }
 
     try {
+      setIsSubmitting(true);
       setIsLoading(true);
       
       const submissionData = {
         testId: testData._id,
         userAnswers: formattedUserAnswers,
-        timeTaken: Math.max(0, (testData.duration * 60) - timeLeftRef.current), // Ensure non-negative
+        timeTaken: Math.max(0, (testData.duration * 60) - timeLeft), // Ensure non-negative
       };
 
       console.log('Submitting test with data:', {
@@ -267,43 +262,26 @@ const TestPage = () => {
       setError(`Error: ${err.message}. ${err.response?.data?.message || 'Please try again later.'}`);
     } finally {
       setIsLoading(false);
+      setIsSubmitting(false);
     }
-  }, [testData, url, token, navigate]);
+  }, [testData, userAnswers, timeLeft, url, token, navigate]);
 
   // Handle tab change detection
   useEffect(() => {
     if (!testStarted) return;
 
-    let timeoutId = null;
-
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'hidden') {
-        // Warn user first
-        const warning = 'You have changed tabs/windows. This is not allowed during the test. Please return to the test immediately or it will be auto-submitted.';
-        alert(warning);
-        console.log('auto submit started');
-        
-        
-        // Auto-submit after a short delay if user doesn't return
-        timeoutId = setTimeout(() => {
-          if (document.visibilityState === 'hidden') {
-            handleSubmit(true);
-          }
-        }, 5000);
-        console.log('auto submit ended');
-      } else {
-        if (timeoutId) {
-          clearTimeout(timeoutId);
-        }
+        // Warn user and then submit
+        alert('You have changed tabs/windows. The test will be submitted now.');
+        handleSubmit(true);
       }
     };
 
     document.addEventListener('visibilitychange', handleVisibilityChange);
+
     return () => {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
     };
   }, [testStarted,handleSubmit]);
   

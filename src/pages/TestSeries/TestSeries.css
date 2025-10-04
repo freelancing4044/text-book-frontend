@@ -453,8 +453,13 @@
 
 @media (max-width: 900px) {
   .test-series-grid {
-    margin-bottom: 30px;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 }
 
 .popular-test-card__detail strong {
